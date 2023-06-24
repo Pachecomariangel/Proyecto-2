@@ -9,8 +9,7 @@ img:'/Imagenes/mail.png'},
 {nombre:'Github',
 img:'/Imagenes/github.png'},
 {nombre:'Linkedin',
-img:'/Imagenes/linkedin.png'},
-];
+img:'/Imagenes/linkedin.png'},];
 
 function crearHTMLLogo(logo) {
     let nombreLogo= document.createElement('h3');
