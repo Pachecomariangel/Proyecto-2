@@ -2,6 +2,7 @@ let parrafo = document.querySelector ('#tele');
 parrafo.addEventListener('click', function(e) {
 e.target.classList.toggle('parrafo-modificado'); });
 
+
 /*let logos= [
 {nombre:'Email',
 img:'/Imagenes/mail.png'},
