@@ -1,20 +1,32 @@
 @import url('https://fonts.googleapies.com/css?family=Open+Sans:wght@400;700&display=swap');
 
+/*movil*/
 /*Estilos generales*/
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+h1{
+    color:rgb(62, 42, 101);
+    font-size: 26px;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    color:rgb(87, 35, 133);
+    font: size 18px
+}
+*{  padding:0;
     scroll-behavior: smooth;
 }
+
 body{
     font-family: 'lato', sans-serif;
     font-size: 18px;
     line-height: 1.2;
     color: #0f0f0f;
-    padding-top: 90px;
-    background-color: #fbfbfb
+    padding-top: 20px;
+}
+body{
+    background-color: rgb(200, 205, 203);
 }
 a {
     text-decoration: none;
@@ -23,17 +35,21 @@ a {
 ul {
     list-style: none;
 }
-
-/*main*/
-
-main{
-    max-width: 1200px;
-    margin: auto; 
+p{
+    color:rgb(20, 17, 17);
+    width: bold;
+}
+    
+#menu{
+    text-align: center;
 }
 
-p{
-    color:rgb(57, 45, 45);
-    text-align: right;
+figure.Presentacion-img img{
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center; 
 }
 
 a.btn {
@@ -42,28 +58,47 @@ a.btn {
     padding: 12px 20px;
     border-radius: 50px;
     font-size: 20px;
-    display: inline-block;}  
+    display: inline-block;
+    justify-content: center;
+}  
+
+#logos {
+    display: flex;
+    justify-content: center;
+}
+
+.color{
+    text-align: center;
+}
+
+
+section#inicio {
+    display: flex;
+    flex-direction: column;
+}
+
+/*desktopk*/
+
+@media(min-width:1024px) {
+section#inicio {
+        flex-direction:row;
+        min-height: 100%;
+        font-weight: 40%;
+}
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px;
-    height: 90px;
+    padding: 20px;
+    height: 80px;
     width: 100%;
     position: fixed;
     top: 0;
-    left: 0;
     right: 0px;
     box-shadow: 0 3px 10px -5px #5f5f5f;
-    background-color: #fbfbfb;
+    background-color: rgb(200, 205, 203);
     border-bottom-style:groove;
- }
- 
-/*Menú de navegación*/
- ul#menu{
-    display:flex;
-    font-size:26px;
  }
  .menu-item {
     padding: 16px;
@@ -81,8 +116,39 @@ header {
  li.menu-item:hover{
     background:rgb(175, 89, 158, 0.3);
     transition: backgroud-color 0.3s;
-   
  }
+ a {
+    text-decoration: none;
+        color: inherit;
+}
+ul {
+    list-style: none;
+}
+/*main*/
+main{
+    max-width: 1200px;
+    margin: auto; 
+}
+p{
+    color:rgb(57, 45, 45);
+    text-align: center;
+
+}
+a.btn {
+    background-color: #af599e;
+    color: #fbfbfb;
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-size: 20px;
+    display: inline-block;
+}  
+/*Menú de navegación*/
+
+ ul#menu{
+    display:flex;
+    font-size:26px;
+}
+
 #logos{
     display: flex;
     justify-content:space-around;
@@ -91,9 +157,8 @@ header {
 section{ 
     min-height: 100vh;
 }
-    
-    /*section inicio*/
-#inicio {
+   /*section inicio*/
+   #inicio {
     display: flex;   
     justify-content: space-between;
     align-items: center;
@@ -107,7 +172,7 @@ h2{
 }
 
 figure.Presentacion-img{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: center; align-items: center;
 }
@@ -125,29 +190,38 @@ figure.Presentacion-img img{
 }
 section#contacto {
     text-align: center;
-    min-width: 600px; }
-
+    min-width: 600px; 
+}
 .color{
     display: flex;
     justify-content: center;
 }
-
-.parrafo-modificado{
+#tele{
     background-color: #8281dd;
     color: #f809c8;
     border: 2px dashed #0f0f0f;
-    height: 20px;
+    height: 20px; 
+}
+}
+    /*tablet*/
+
+@media(min-width:768px) {
+    p{ 
+    font-size: 18px;
+}
+    #logo-list{
+        border: 2px solid #000;
+        border-radius: 20px;
+        margin: 10px;
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+}
+img { 
+    width: 200px;
+}
 }
 
-#logo-list{
-    border: 2px solid #000;
-    border-radius: 20px;
-    margin: 10px;
-    padding: 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
 
-img{ width: 200px;}
