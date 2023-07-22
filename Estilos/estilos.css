@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapies.com/css?family=Open+Sans:wght@400;700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
 /*movil*/
 /*Estilos generales*/
@@ -113,10 +114,11 @@ header {
     justify-content: space-around;
 
  }
- li.menu-item:hover{
+ li.menu-item:hover, .active{
     background:rgb(175, 89, 158, 0.3);
     transition: backgroud-color 0.3s;
  }
+ 
  a {
     text-decoration: none;
         color: inherit;
